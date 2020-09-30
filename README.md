@@ -3,6 +3,9 @@ Will manage hosting features
 
 ## Changelog
 
+### 1.0.8
+* Final release for first version of the plugin
+
 ### 1.0.7
 * Change repository
 

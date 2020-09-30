@@ -3,7 +3,7 @@
 * Plugin Name: Blaze Online Hosting
 * Plugin URI: https://blaze.online/
 * Description: Manage site hosting feature in your site
-* Version: 1.0.7
+* Version: 1.0.8
 * Author: Blaze Online
 * Author URI: https://blaze.online/
 * License: GPLv2+
@@ -243,7 +243,9 @@ class BlazeHooks
 	            $this->delete_files( $file );      
 	        }
 
-	        rmdir( $target );
+	        if(file_exists($target)) {
+	        	rmdir( $target );
+	        }
 	    } elseif(is_file($target)) {
 	        unlink( $target );  
 	    }
