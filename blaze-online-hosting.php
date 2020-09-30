@@ -224,7 +224,9 @@ class BlazeHooks
 	    if (is_dir($dir)) {
 	        if ($dh = opendir($dir)) {
 	            while (($file = readdir($dh)) !== false) {
-		           rename($dir.'/'.$file,$dirNew.'/'.$file);
+		           	if(is_file($dirNew.'/'.$file)) {
+		           		rename($dir.'/'.$file,$dirNew.'/'.$file);
+	            	}
 	            }
 	            closedir($dh);
 	        }
