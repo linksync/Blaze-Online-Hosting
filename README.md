@@ -3,6 +3,9 @@ Will manage hosting features
 
 ## Changelog
 
+### 1.0.7
+* Change repository
+
 ### 1.0.6
 * Removed unused codes and improve the updater script
 

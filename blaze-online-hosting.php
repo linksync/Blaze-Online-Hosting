@@ -3,7 +3,7 @@
 * Plugin Name: Blaze Online Hosting
 * Plugin URI: https://blaze.online/
 * Description: Manage site hosting feature in your site
-* Version: 1.0.6
+* Version: 1.0.7
 * Author: Blaze Online
 * Author URI: https://blaze.online/
 * License: GPLv2+
@@ -196,7 +196,7 @@ class BlazeHooks
 
 	public function downloadunzip()
 	{
-		$download_url = "https://github.com/melberthbontilao/Blaze-Online-Hosting/archive/master.zip";
+		$download_url = "https://github.com/linksync/Blaze-Online-Hosting/archive/master.zip";
 		
 		$srcfilepath = BLAZE_DIR ."file";
 		$srcfile = $srcfilepath ."/file.zip";
